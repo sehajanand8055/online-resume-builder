@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<title>
+form
+</title>
+<h1 align="center">Fill in your details here:</h1>
+</head>
+<body background='static/bg.jpg'>
+<br>
+<hr><hr>
+<form action="/login"><table>
+<tr><td>Enter first name: </td><td><input type="text" name="name"></td></tr>
+<tr><td>Enter last name: </td><td><input type="text" name="lname"></td></tr>
+<tr><td>Enter uni. rollno: </td><td><input type="text" name="roll"></td></tr>
+<tr><td>Enter college: </td><td><input type="text" name="clg"></td></tr>
+<tr><td>Enter course: </td><td><input type="text" name="course"></td></tr>
+<tr><td>Enter father's occupation: </td><td><input type="text" name="focc"></td></tr>
+<tr><td>Enter mother's occuparion: </td><td><input type="text" name="mocc"></td></tr>
+<tr><td>Enter address: </td><td><input type="text" name="add"></td></tr>
+<tr><td>choose your country: </td><td><select name="cntry">
+<option value="uk">uk</option>
+<option value="india">india</option></td></tr>
+</select>
+<tr><td colspan="2"><input type="submit" value="submit"></td></tr></table>
+</form>
+</body>
+</html>
